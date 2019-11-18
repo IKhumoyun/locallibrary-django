@@ -22,6 +22,7 @@ class Book(models.Model):
 
     def __str__(self):
         """String for representating the Model object."""
+        return self.title
 
     def get_absolute_url(self):
         from django.core.urlresolvers import reverse
